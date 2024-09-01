@@ -1,0 +1,58 @@
+/* Add this to your CSS file or style section */
+.customizer-btn-container {
+    position: fixed;
+    top: 20%;; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+  }
+  
+  .customizer-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .material-icons {
+    margin-right: 5px;
+  }
+  
+  .customizer-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Adjust as needed */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+    z-index: 1000;
+    border-radius: 10px;
+    
+  }
+  
+  .customizer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  /* marquee.css */
+
+  .custom-marquee {
+    font-size: 24px; /* Larger font size */
+    color: #ffffff; /* White text color */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00ff00, 0 0 30px #00ffff, 0 0 40px #ff00ff, 0 0 50px #ff0000, 0 0 60px #ffff00; /* Glow effect */
+    position: relative; /* Set position to relative */
+    bottom: 90px; /* Adjust the distance from the top */
+  }
+  

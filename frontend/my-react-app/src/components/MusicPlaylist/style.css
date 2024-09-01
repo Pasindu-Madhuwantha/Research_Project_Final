@@ -1,0 +1,111 @@
+body {
+  /* Add background properties here */
+  background-image: url('../../../steamuserimages-a.akamaihd.gif');
+  margin-top: 10%;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+
+.mp3-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.playlist-container {
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 570px;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  overflow-y: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.playlist-visible .playlist-container {
+  transform: translateX(0);
+}
+
+.playlist-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.playlist-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.refresh-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  top: 30%;
+  
+}
+
+
+.rounded-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.audioplayer.rhap_time-color {
+  color: #faf5f5 !important;
+}
+
+.audioplayer.rhap_font-family {
+  font-family: #c01212 !important;
+}
+
+.download-button {
+  width: 80px;
+  height: 30px;
+  left: -40px; /* Adjust this value as needed */
+  /* OR */
+  /* margin-left: -40px; */
+}
+
+.now-playing{
+  font-style: italic;
+  color: #000000;
+}
+
+
+.rhap_controls-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;  left: 10%;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.rhap_main-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; /* Adjust the margin as needed */
+  position: fixed;
+}

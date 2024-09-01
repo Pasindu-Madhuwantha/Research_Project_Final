@@ -1,0 +1,13 @@
+// models/Weather.js
+const mongoose = require('mongoose');
+
+const weatherSchema = new mongoose.Schema({
+  path: {
+    type: String,
+    required: true
+  }
+});
+
+const Weather = mongoose.model('Weather', weatherSchema);
+
+module.exports = Weather;
